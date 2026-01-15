@@ -3,7 +3,7 @@ from ics import Calender, Event
 
 
 timeEDIT_URL = "PASTE_YOUR_TIMEEDIT_ICS_URL_HERE"
-OUTPUT_FILE = "output/clean.ics"  ## file we save new calander in?
+OUTPUT_FILE = "docs/clean.ics"  ## file we save new calander in?
 
 raw = request.get(timeEDIT_URL,timeout=30)
 raw.raise_for_status()
