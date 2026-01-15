@@ -2,7 +2,7 @@ import requests
 from ics import Calendar, Event
 
 
-timeEDIT_URL = "https://cloud.timeedit.net/usn/web/publikk/ri6Q28467l804WQQQWZq566Z7VyY051V9924XlY5W556XZW52612WZ7QQ713nqdnZuo00nm6nwonZl0Q3085Q6l7ZQ8kb9o13tZ889t3B43634AE29FF1DE65A663E319E8C99.ics"
+timeEDIT_URL = "https://cloud.timeedit.net/usn/web/publikk/ri6QZ84Q7l804kQQQQZqqu0Z76yZ05w0n9d4ZlY5W55b1ZQ5Z5Qot00moD38l7n019Q38tDA89nDl0n6506727AZ8oA03B1nB33D47DAFD5C0074274.ics"
 OUTPUT_FILE = "docs/clean.ics"  ## file we save new calander in?
 
 raw = requests.get(timeEDIT_URL,timeout=30)
