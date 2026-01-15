@@ -11,17 +11,17 @@ raw.raise_for_status()
 source = Calendar(raw.text)
 clean = Calandar()
 
-for i in source.event:
-  parts = [p.strip() for p in i.name.split("|")]
+for e in source.event:
+  parts = [p.strip() for p in e.name.split("|")]
   
   title = part[0]
   details = "\n".join(parts[1:])
   
   new = Event()
   new.name = title
-  new.begin = i.begin
-  new.end = i.end
-  new.location i.location
+  new.begin = e.begin
+  new.end = e.end
+  new.location e.location
   new.description = details
   
   clean.events.add(new)
