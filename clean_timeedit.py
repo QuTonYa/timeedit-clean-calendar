@@ -1,5 +1,5 @@
-import request;
-from ics import Calender, Event:
+import request
+from ics import Calender, Event
 
 
 timeEDIT_URL = "PASTE_YOUR_TIMEEDIT_ICS_URL_HERE"
